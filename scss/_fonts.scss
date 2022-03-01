@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+// $font-helvetica: "HelveticaNeue", sans-serif;
+// $font-helvetica-bold: "HelveticaNeue-Bold", sans-serif;
+$font-gilroy: "gilroy-light", "sans-serif";
+$font-gilroy-bold: "gilroy-extrabold", sans-serif;
+$font-graphik: "graphik-regular", sans-serif;
+$font-graphik-semibold: "graphik-semibold", sans-serif;
+$font-graphik-bold: "graphik-black", sans-serif;
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
+    }
+}
+
+$font-families: (
+    "helvetica": "HelveticaNeue",
+    "helvetica-bold": "HelveticaNeue-Bold",
+    "gilroy": "gilroy-light",
+    "gilroy-bold": "gilroy-extrabold",
+    "graphik": "graphik-regular",
+    "graphik-semibold": "graphik-semibold",
+    "graphik-bold": "graphik-black",
+);
+
+@each $name, $font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+//Gilroy Fonts
+
+@font-face {
+    font-family: "gilroy-light";
+    src: url("../webfonts/gilroy-light-webfont.woff2") format("woff2"),
+        url("../webfonts/gilroy-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilroy-extrabold";
+    src: url("../webfonts/gilroy-extrabold-webfont.woff2") format("woff2"),
+        url("../webfonts/gilroy-extrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Graphik
+
+@font-face {
+    font-family: "graphik-regular";
+    src: url("../webfonts/GraphikRegular.woff2") format("woff2"), url("../webfonts/GraphikRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "graphik-black";
+    src: url("../webfonts/GraphikBlack.woff2") format("woff2"), url("../webfonts/GraphikBlack.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "graphik-semibold";
+    src: url("../webfonts/GraphikSemibold.woff2") format("woff2"),
+        url("../webfonts/GraphikSemibold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// font sizes
+
+h1,
+.h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 4rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 2.56rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+h7,
+.h7 {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "name": "wordpress-dev-theme",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.12.0",
+        "browser-sync": "^2.26.7",
+        "del": "^5.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-cached": "^1.1.1",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssnano": "^1.1.0",
+        "gulp-imagemin": "^6.0.0",
+        "gulp-minify": "^3.1.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "font-awesome": "^4.7.0",
+        "jquery": "^1.9.1",
+        "jquery-validation": "^1.19.3",
+        "js-datepicker": "^5.2.1",
+        "lazyload": "^2.0.0-rc.2",
+        "merge-stream": "^2.0.0",
+        "node-sass": "^4.14.0",
+        "nodemon": "^2.0.7",
+        "slick-carousel": "^1.8.1"
+    },
+    "scripts": {
+        "start": "nodemon --exec \"gulp watch\" --watch ./gulpfile.js",
+        "build": "gulp build --production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amokdadaiims/WordPress-Dev-Theme.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/amokdadaiims/WordPress-Dev-Theme/issues"
+    },
+    "homepage": "https://github.com/amokdadaiims/WordPress-Dev-Theme#readme"
+}

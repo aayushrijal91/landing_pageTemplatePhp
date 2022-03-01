@@ -1,55 +1,89 @@
-// Rounded buttons
+img {
+    max-width: 100%;
+}
 
+body {
+    font-family: $font-body;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+// Rounded buttons
 @for $i from 1 through 10 {
     .rounded-#{$i} {
         border-radius: #{$i}px;
     }
 }
 
-//line-height
+.text-italic {
+    font-style: italic;
+}
 
+//line-height
 .line-height-1 {
     line-height: 1;
 }
 
-// Animation
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+.line-height-2 {
+    line-height: 2;
 }
 
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
 
-    100% {
-        transform: translateX(0);
-    }
+//Go To Top
+#return-to-top {
+    position: fixed;
+    bottom: 95px;
+    right: 13px;
+    z-index: 9;
+    background: $primary;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+#return-to-top img {
+    margin: 0;
+    position: relative;
+    left: 13px;
+    top: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
 
-    100% {
-        transform: translateY(0);
-    }
+#return-to-top:hover img {
+    top: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #022444;
 }

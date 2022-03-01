@@ -1,97 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-// $font-helvetica: "HelveticaNeue", sans-serif;
-// $font-helvetica-bold: "HelveticaNeue-Bold", sans-serif;
-$font-gilroy: "gilroy-light", "sans-serif";
-$font-gilroy-bold: "gilroy-extrabold", sans-serif;
-$font-graphik: "graphik-regular", sans-serif;
-$font-graphik-semibold: "graphik-semibold", sans-serif;
-$font-graphik-bold: "graphik-black", sans-serif;
-
-$font-weights: 300, 400, 500, 600, 700, 800, 900;
-
-@each $fw in $font-weights {
-    .fw-#{$fw} {
-        font-weight: $fw;
-    }
-}
-
-$font-families: (
-    "helvetica": "HelveticaNeue",
-    "helvetica-bold": "HelveticaNeue-Bold",
-    "gilroy": "gilroy-light",
-    "gilroy-bold": "gilroy-extrabold",
-    "graphik": "graphik-regular",
-    "graphik-semibold": "graphik-semibold",
-    "graphik-bold": "graphik-black",
-);
-
-@each $name, $font-family in $font-families {
-    .font-#{$name} {
-        font-family: $font-family, sans-serif;
-    }
-}
-
-//Gilroy Fonts
-
-@font-face {
-    font-family: "gilroy-light";
-    src: url("../webfonts/gilroy-light-webfont.woff2") format("woff2"),
-        url("../webfonts/gilroy-light-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "gilroy-extrabold";
-    src: url("../webfonts/gilroy-extrabold-webfont.woff2") format("woff2"),
-        url("../webfonts/gilroy-extrabold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-// Graphik
-
-@font-face {
-    font-family: "graphik-regular";
-    src: url("../webfonts/GraphikRegular.woff2") format("woff2"), url("../webfonts/GraphikRegular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "graphik-black";
-    src: url("../webfonts/GraphikBlack.woff2") format("woff2"), url("../webfonts/GraphikBlack.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "graphik-semibold";
-    src: url("../webfonts/GraphikSemibold.woff2") format("woff2"),
-        url("../webfonts/GraphikSemibold.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-// font sizes
-
-h1,
-.h1 {
-    font-size: 6rem;
-    margin-bottom: 0;
-
-    @include media-breakpoint-down(md) {
-        font-size: 4rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-        font-size: 2rem;
-    }
-}
-
-h2,
-.h2 {
-    font-size: 3.5rem;
+/* Font sizes */
+.h1-xxl {
+    font-size: 5rem; // 80px
     margin-bottom: 0;
 
     @include media-breakpoint-down(md) {
@@ -103,9 +12,37 @@ h2,
     }
 }
 
+h1,
+.h1 {
+    font-size: 4.375rem; // 70px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 3.4375rem; // 55px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+}
+
 h3,
 .h3 {
-    font-size: 3rem;
+    font-size: 2.5rem; // 40px
     margin-bottom: 0;
 
     @include media-breakpoint-down(md) {
@@ -119,17 +56,17 @@ h3,
 
 h4,
 .h4 {
-    font-size: 2.56rem;
+    font-size: 2rem; // 32px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 h5,
 .h5 {
-    font-size: 1.5rem;
+    font-size: 1.625rem; // 26px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
@@ -139,7 +76,7 @@ h5,
 
 h6,
 .h6 {
-    font-size: 1.25rem;
+    font-size: 1.5625rem; // 25px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
@@ -149,10 +86,101 @@ h6,
 
 h7,
 .h7 {
-    font-size: 1.125rem;
+    font-size: 1.5rem; // 24px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
         font-size: 1rem;
+    }
+}
+
+.h8 {
+    font-size: 1.4375rem; // 23px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h9 {
+    font-size: 1.375rem; // 22px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h10 {
+    font-size: 1.25rem; // 20px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h11 {
+    font-size: 1.125rem; // 18px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h12 {
+    font-size: 0.9375rem; // 15px
+}
+
+$font-gilroy: "Gilroy", sans-serif;
+$font-mergepro: "Merge Pro", sans-serif;
+
+$font-body: $font-mergepro;
+
+$font-families: (
+    "gilroy": "Gilroy",
+    "mergepro": "Merge Pro",
+);
+
+@each $name, $font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2"),
+            url($asset-path + $font-file + ".eot") format("embedded-opentype"),
+            url($asset-path + $font-file + ".ttf") format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Gilroy", "Gilroy-Thin", 100);
+@include font-face("Gilroy", "Gilroy-Ultralight", 200);
+@include font-face("Gilroy", "Gilroy-Light", 300);
+@include font-face("Gilroy", "Gilroy-Regular", 400);
+@include font-face("Gilroy", "Gilroy-Medium", 500);
+@include font-face("Gilroy", "Gilroy-Semibold", 600);
+@include font-face("Gilroy", "Gilroy-Bold", 700);
+@include font-face("Gilroy", "Gilroy-Extrabold", 800);
+@include font-face("Gilroy", "Gilroy-Black", 900);
+@include font-face("Gilroy", "Gilroy-Heavy", 901);
+@include font-face("Merge Pro", "Merge", 901);
+@include font-face("Merge Pro", "MergePro", 901);
+@include font-face("Merge Pro", "MergeProBold", 901);
+@include font-face("Merge Pro", "MergeProCondensedBold", 901);
+@include font-face("Merge Pro", "MergeProCondensedRegular", 901);
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
     }
 }

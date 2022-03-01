@@ -1,24 +1,16 @@
-$primary: #e78138;
-$secondary: #d54d3b;
-$tertiary: #363636;
-$tertiary-dark: #242424;
-$dark: #3c4a5a !default;
-$light: #b4b4b4 !default;
+$primary: #440099;
+$secondary: #C2046E;
+$tertiary: #3729C2;
+$dark: #393A41;
+$light: #e5e5e5;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
     (
         "tertiary": $tertiary,
-        "tertiary-dark": $tertiary-dark,
     ),
     $theme-colors
 );
-
-// Fonts
-$font-family-helvetica: "HelveticaNeue";
-$font-family-helvetica-bold: "HelveticaNeue-Bold";
-
-$font-weight-500: 500 !default;
 
 // Grid Breakpoints
 $grid-breakpoints: (
@@ -26,15 +18,16 @@ $grid-breakpoints: (
     sm: 576px,
     md: 768px,
     lg: 992px,
-    xl: 1200px,
+    xl: 1440px,
     xxl: 1748px,
 ) !default;
 // Container sizing
 $container-max-widths: (
     sm: 540px,
     md: 740px,
-    lg: 960px,
-    xl: 1670px,
+    lg: 1280px,
+    xl: 1442px,
+    xxl: 1628px,
 ) !default;
 
 // $input-btn-padding-y: 1.25rem !default;

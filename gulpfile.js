@@ -19,23 +19,18 @@ function style() {
 }
 
 function imgSquash() {
-    return gulp.src("./images/*")
+    return gulp.src("./images/**/*")
         .pipe(imagemin())
         .pipe(gulp.dest("./app/assets/images"));
 }
-
-gulp.task("imgSquash", imgSquash);
 
 function scripts() {
     // All JS files to be combined
     const scriptsList = [
         './node_modules/jquery/dist/jquery.min.js',
-        // './node_modules/jquery-validation/dist/jquery.validate.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
-        // 'node_modules/slick-carousel/slick/slick.min.js',
-        'node_modules/@fortawesome/fontawesome-free/js/brands.min.js',
-        'node_modules/@fortawesome/fontawesome-free/js/regular.min.js',
-        'node_modules/@fortawesome/fontawesome-free/js/solid.min.js',
+        './node_modules/slick-carousel/slick/slick.min.js',
+        // './node_modules/aos/dist/aos.js',
         'scripts/main.js',
 
     ];
@@ -48,17 +43,15 @@ function scripts() {
 
 
 function watch() {
-    console.log(path.resolve(__dirname, '../').split(path.sep).pop());
     browserSync.init({
         proxy: encodeURI(`localhost/projects/landing_pages/${path.resolve(__dirname, './').split(path.sep).pop()}/app`),
         injectChanges: true,
     });
     gulp.watch("./scss/**/*.scss", style);
     gulp.watch('./scripts/**/*.js', scripts);
-    gulp.watch("./images/*", imgSquash);
+    // gulp.watch("./images/**/*", imgSquash);
     gulp.watch('./app/**/*.php').on('change', browserSync.reload);
-    gulp.watch("./app/js/**/*.js").on('change', browserSync.reload);
-
+    gulp.watch("./app/assets/js/**/*.js").on('change', browserSync.reload);
 }
 
 exports.style = style;

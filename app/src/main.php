@@ -50,14 +50,14 @@ include __DIR__ . '/header.php';
 						</div>
 						<div class="row justify-content-start align-items-center mt-4">
 							<div class="col-12 col-md-auto form-quote-privacy-policy-text pb-3 pb-xl-0">
-								<i class="fas fa-lock"></i><span class="pl-3 font-gilroy-bold">Your privacy is our
+								<i class="fas fa-lock"></i><span class="pl-3">Your privacy is our
 									priority</span> |
 								All
 								information will remain 100% private and
 								secure
 							</div>
 							<div class="col col-lg">
-								<button type="submit" class="btn btn-primary text-white form-control rounded-3 font-helvetica font-weight-bold quote-btn">
+								<button type="submit" class="btn btn-primary text-white form-control rounded-3">
 									Enquire Now!</button>
 							</div>
 						</div>

@@ -1,17 +1,4 @@
 /* Font sizes */
-.h1-xxl {
-    font-size: 5rem; // 80px
-    margin-bottom: 0;
-
-    @include media-breakpoint-down(md) {
-        font-size: 3rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-        font-size: 2rem;
-    }
-}
-
 h1,
 .h1 {
     font-size: 4.375rem; // 70px
@@ -131,13 +118,11 @@ h7,
 }
 
 $font-gilroy: "Gilroy", sans-serif;
-$font-mergepro: "Merge Pro", sans-serif;
 
 $font-body: $font-mergepro;
 
 $font-families: (
     "gilroy": "Gilroy",
-    "mergepro": "Merge Pro",
 );
 
 @each $name, $font-family in $font-families {
@@ -171,11 +156,6 @@ $asset-path: "../webfonts/";
 @include font-face("Gilroy", "Gilroy-Extrabold", 800);
 @include font-face("Gilroy", "Gilroy-Black", 900);
 @include font-face("Gilroy", "Gilroy-Heavy", 901);
-@include font-face("Merge Pro", "Merge", 901);
-@include font-face("Merge Pro", "MergePro", 901);
-@include font-face("Merge Pro", "MergeProBold", 901);
-@include font-face("Merge Pro", "MergeProCondensedBold", 901);
-@include font-face("Merge Pro", "MergeProCondensedRegular", 901);
 
 $font-weights: 300, 400, 500, 600, 700, 800, 900;
 

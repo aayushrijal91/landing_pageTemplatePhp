@@ -1,18 +1,3 @@
 @function imgUrl($file, $path: "background") {
     @return url("../images/" + $path + "/" + $file) no-repeat;
 }
-
-footer {
-    .footer-nav-li {
-        font-size: 0.875rem;
-        line-height: 1.47rem;
-        color: #58585a
-    }
-
-    .footer-nav-li-before::before {
-        @include media-breakpoint-up(lg) {
-            content: "|";
-            padding-right: 1.5rem;
-        }
-    }
-}

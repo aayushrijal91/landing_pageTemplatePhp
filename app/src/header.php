@@ -24,15 +24,15 @@
 
 <body>
 	<header>
-		<div class="header-top-bar">
-			<div class="container py-3">
+		<div class="header-top-bar py-3">
+			<div class="container">
 				<div class="row justify-content-center justify-content-lg-between align-items-center">
 					<div class="col-auto">
 						<a href="./">
-							<img src="<?= $img_dir ?>/logo/logo.png" alt="Logo">
+							<?= renderImg("logo.png","logo") ?>
 						</a>
 					</div>
-					<div class="col-auto col-lg font-weight-bold">
+					<div class="col-auto">
 						<div class="row justify-content-center justify-content-lg-end no-gutters align-items-center">
 							<div class="col-12 col-md-auto ml-lg-3 mr-2 mr-lg-0">
 								<a href="#form-quote" class="btn btn-block btn-primary rounded-0 text-white py-3 px-md-5">

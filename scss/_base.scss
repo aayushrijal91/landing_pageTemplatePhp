@@ -9,6 +9,10 @@ body {
     padding: 0;
 }
 
+.btn:focus {
+    box-shadow: none;
+    outline: 0;
+}
 // Rounded buttons
 @for $i from 1 through 10 {
     .rounded-#{$i} {
@@ -28,7 +32,6 @@ body {
 .line-height-2 {
     line-height: 2;
 }
-
 
 //Go To Top
 #return-to-top {

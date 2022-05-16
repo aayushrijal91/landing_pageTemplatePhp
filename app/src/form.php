@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $headers = "MIME-Version: 1.0\r\n" .
             "Content-type: text/html; charset=utf-8\r\n" .
             "From: " . $site . " <". $no_reply_email . ">" . "\r\n" .
-            "Bcc: " . $bcc_email . "\r\n" .
+            // "Bcc: " . $bcc_email . "\r\n" .
             "Reply-To: " . $site . " <". $no_reply_email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
         $result = mail($to, $subject, $message, $headers);

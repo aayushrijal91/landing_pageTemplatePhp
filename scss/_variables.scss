@@ -3,11 +3,15 @@ $secondary: #C2046E;
 $tertiary: #3729C2;
 $dark: #393A41;
 $light: #e5e5e5;
+$black: #000000;
+$white: #ffffff;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
     (
         "tertiary": $tertiary,
+        "black": $black,
+        "white": $white,
     ),
     $theme-colors
 );

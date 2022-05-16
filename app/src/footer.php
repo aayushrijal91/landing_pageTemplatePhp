@@ -15,7 +15,9 @@
 				<div class="col-auto">
 					<div class="row no-gutters justify-content-center justify-content-lg-end align-items-center">
 						<div class="col-auto footer-nav-li pl-lg-5">
-							<a href="https://www.aiims.com.au/like-our-work/" target="_blank"><img src="./assets/images/aiims-footer-logo-invert.png" alt="AIIMS"></a>
+							<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
+								<?= renderImg("aiims.png","logo") ?>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -27,8 +29,8 @@
 			<div class="row justify-content-center justify-content-lg-between align-items-center py-3 py-lg-4">
 				<div class="col-auto">
 					<div class="row no-gutters mb-3 mb-md-0">
-						<div class="col mr-1"><img src="./assets/images/icon-visa-card.png" alt="Payment Options"></div>
-						<div class="col mr-1"><img src="./assets/images/icon-mastercard.png" alt="Payment Options"></div>
+						<div class="col mr-1">a</div>
+						<div class="col mr-1">a</div>
 					</div>
 				</div>
 				<div class="col-auto">
@@ -39,7 +41,9 @@
 						<div class="col-auto px-2 px-md-4">|</div>
 						<div class="col-auto">All Rights Reserved</div>
 						<div class="col-auto pl-lg-5">
-							<a href="https://www.aiims.com.au/like-our-work/" target="_blank"><img src="./assets/images/aiims-footer-logo.png" alt="AIIMS"></a>
+							<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
+							<?= renderImg("aiims1.png","logo") ?>
+							</a>
 						</div>
 					</div>
 				</div>

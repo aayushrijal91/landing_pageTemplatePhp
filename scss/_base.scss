@@ -13,6 +13,7 @@ body {
     box-shadow: none;
     outline: 0;
 }
+
 // Rounded buttons
 @for $i from 1 through 10 {
     .rounded-#{$i} {
@@ -22,6 +23,10 @@ body {
 
 .text-italic {
     font-style: italic;
+}
+
+.text-decoration-none {
+    text-decoration: none;
 }
 
 //line-height

@@ -25,7 +25,6 @@ function scripts() {
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
         // 'node_modules/slick-carousel/slick/slick.min.js',
         'scripts/main.js',
-
     ];
 
     return src(scriptsList)
@@ -41,7 +40,7 @@ function watchTask() {
     });
     watch("./scss/**/*.scss", style);
     watch('./scripts/**/*.js', scripts);
-    // watch("./images/**/*", imgSquash);
+    watch("./images/**/*", imgSquash);
     watch('./app/**/*.php').on('change', browserSync.reload);
     watch("./app/assets/js/**/*.js").on('change', browserSync.reload);
 }

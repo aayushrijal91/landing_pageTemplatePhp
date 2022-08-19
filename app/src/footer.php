@@ -1,6 +1,6 @@
 <footer>
 	<div class="container">
-		<div class="row justify-content-center justify-content-lg-between align-items-center py-3 py-lg-4">
+		<div class="row justify-content-center justify-content-lg-between align-items-center">
 			<div class="col-auto">
 				<div class="row gx-2 gx-md-3 text-white justify-content-center">
 					<div class="col-12 text-center pb-3 d-lg-none">
@@ -9,9 +9,9 @@
 						</a>
 					</div>
 					<div class="col-auto text-center">Copyright <?= date('Y') ?></div>
-					<div class="col-auto text-primary">|</div>
+					<div class="col-auto">|</div>
 					<div class="col-auto text-center"><?= $site ?></div>
-					<div class="col-auto text-primary">|</div>
+					<div class="col-auto">|</div>
 					<div class="col-auto text-center">All Rights Reserved
 					</div>
 				</div>

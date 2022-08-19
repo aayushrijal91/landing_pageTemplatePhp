@@ -4,9 +4,7 @@ This is a landing page boilerplate that uses PHP scripting language
 
 ## _Author Information_
 
-Developer: Aayush Rijal
-
-Email: arijal@aiims.com.au, aayush.rijal99@gmail.com
+Developer: [Aayush Rijal](https://www.aayushrijal.net)
 
 Contact: 0452637371
 

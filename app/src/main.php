@@ -13,7 +13,7 @@ include __DIR__ . '/header.php';
                     </a>
                 </div>
                 <div class="col-auto">
-                    <div class="row justify-content-center justify-content-lg-end no-gutters align-items-center">
+                    <div class="row justify-content-center justify-content-lg-end align-items-center">
                         <div class="col-12 col-md-auto ml-lg-3 mr-2 mr-lg-0">
                             <a href="#form-quote" class="btn btn-block btn-primary rounded-0 text-white py-3 px-md-5">
                                 Get A Quote

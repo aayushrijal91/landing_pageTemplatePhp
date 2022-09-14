@@ -36,7 +36,7 @@ function scripts() {
 
 function watchTask() {
     browserSync.init({
-        proxy: encodeURI(`localhost/projects/landing_pages/${path.resolve(__dirname, './').split(path.sep).pop()}/app`),
+        proxy: encodeURI(`localhost/landing_pages/${path.resolve(__dirname, './').split(path.sep).pop()}/app`),
         injectChanges: true,
     });
     watch("./scss/**/*.scss", style);

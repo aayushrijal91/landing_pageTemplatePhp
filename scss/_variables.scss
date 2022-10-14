@@ -1,64 +1,48 @@
-$primary: #742CFF;
-$primary-light: #787BE6;
-$primary-dark: #00007D;
-$secondary: #040987;
-$secondary-light: #742CFF;
-$secondary-dark: #5112CA;
-$quartinary: #D3D3FF;
-$tertiary: #EB6D45;
+$primary: #803DD4;
+$secondary: #F9A51A;
+$tertiary: #ededed;
 $black: #000000;
 $white: #ffffff;
 $light: #f3f3f3;
 $dark: #8B8B8B;
+$grey: #d9d9d9;
 
-$theme-colors: (
-    ) !default;
+$theme-colors: () !default;
+
 $theme-colors: map-merge((
             "primary": $primary,
-            "primary-light": $primary-light,
-            "primary-dark": $primary-dark,
             "secondary": $secondary,
-            "secondary-light": $secondary-light,
-            "secondary-dark": $secondary-dark,
-            "quartinary": $quartinary,
             "tertiary": $tertiary,
             "black": $black,
             "white": $white,
-            "dark": $dark,
             "light": $light,
+            "dark": $dark,
+            "grey": $grey,
         ),
         $theme-colors
 );
 
+// $line-height-xxl: 3 !default;
+
 $font-sizes: (
-    1: 6rem,
+    128: 8rem,
+    //128px
+    96: 6rem,
     //96px
-    2: 4rem,
+    64: 4rem,
     //64px
-    3: 3rem,
-    //48px
-    4: 2.5rem,
-    //40px
-    5: 2.25rem,
+    36: 2.25rem,
     //36px
-    6: 2rem,
+    32: 2rem,
     //32px
-    7: 1.5rem,
+    24: 1.5rem,
     //24px
-    8: 1.375rem,
-    //22px
-    9: 1.25rem,
+    20: 1.25rem,
     //20px
-    10: 1.125rem,
+    18: 1.125rem,
     //18px
-    11: 1rem,
+    16: 1rem,
     //16px
-    12: 0.875rem,
-    //14px
-    13: 0.75rem,
-    //12px
-    14: 0.625rem,
-    //10px
 );
 
 // Grid Breakpoints
@@ -70,18 +54,20 @@ $grid-breakpoints: (
     xl: 1440px,
     xxl: 1748px,
     ) !default;
+
 // Container sizing
 $container-max-widths: (
     sm: 540px,
     md: 740px,
     lg: 1280px,
     xl: 1442px,
-    xxl: 1581px,
+    xxl: 1632px,
     ) !default;
 
 $spacer: 1rem !default;
 $spacers: (
     ) !default;
+
 $spacers: map-merge((0: 0,
             1: $spacer * 0.25,
             2: $spacer * 0.5,
@@ -101,3 +87,67 @@ $spacers: map-merge((0: 0,
         ),
         $spacers
 );
+
+$border-radius:               .25rem !default;
+$border-radius-pill:          50rem !default;
+
+$utilities: () !default;
+$utilities: map-merge((
+    "line-height":(
+        property: line-height,
+        class: lh,
+        responsive: true,
+        values: (
+            1:1,
+            2:2,
+            3:1.29,
+            4:4,
+        )
+    ),
+    "rounded": (
+        property: border-radius,
+        class: rounded,
+        responsive: true,
+        values: (
+            null: $border-radius,
+            0:0,
+            1:1px,
+            2:2px,
+            3:3px,
+            4:4px,
+            5:5px,
+            6:6px,
+            7:7px,
+            8:8px,
+            9:9px,
+            10:10px,
+            20:20px,
+            circle: 50%,
+            pill: $border-radius-pill
+        )
+    ),
+    "font-weight": (
+        property: font-weight,
+        class: fw,
+        responsive: true,
+        values: (
+            100:100,
+            200:200,
+            300:300,
+            400:400,
+            500:500,
+            600:600,
+            700:700,
+            800:800,
+            900:900
+        )
+    ),
+    "letter-spacing": (
+        property: letter-spacing,
+        class: ls,
+        values: (
+            1: 0.01em,
+            2: -0.2em
+        )
+    )
+), $utilities);

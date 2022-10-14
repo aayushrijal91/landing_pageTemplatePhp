@@ -9,9 +9,23 @@ body {
     padding: 0;
 }
 
-.btn:focus {
-    box-shadow: none;
-    outline: 0;
+.btn {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 700;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+    }
 }
 
 // Rounded buttons

@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         }
 
         $to = $admin_email;
+        $email = $to;
 
         $subject = "Message from " . $site;
 
@@ -66,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             "Content-type: text/html; charset=utf-8\r\n" .
             "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
             // "Bcc: " . $bcc_email . "\r\n" .
-            "Reply-To: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
+            "Reply-To: " . $site . " <" . $email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
         $result = mail($to, $subject, $message, $headers);
 

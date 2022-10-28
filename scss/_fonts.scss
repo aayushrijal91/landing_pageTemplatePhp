@@ -38,11 +38,3 @@ $asset-path: "../webfonts/";
 @include font-face("Gilroy", "Gilroy-Extrabold", 800);
 @include font-face("Gilroy", "Gilroy-Black", 900);
 @include font-face("Gilroy", "Gilroy-Heavy", 901);
-
-$font-weights: 300, 400, 500, 600, 700, 800, 900;
-
-@each $fw in $font-weights {
-    .fw-#{$fw} {
-        font-weight: $fw;
-    }
-}

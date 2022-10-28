@@ -28,13 +28,6 @@ body {
     }
 }
 
-// Rounded buttons
-@for $i from 1 through 10 {
-    .rounded-#{$i} {
-        border-radius: #{$i}px;
-    }
-}
-
 .text-italic {
     font-style: italic;
 }
@@ -56,9 +49,10 @@ body {
 #return-to-top {
     position: fixed;
     bottom: 95px;
-    right: 13px;
+    right: 55px;
     z-index: 9;
-    background: $primary;
+    background: $tertiary;
+    box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.3);
     width: 50px;
     height: 50px;
     display: block;
@@ -103,7 +97,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $primary;
+    background: $tertiary;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -40,8 +40,7 @@
 					<div class="col-auto">|</div>
 					<div class="col-auto text-center"><?= $site ?></div>
 					<div class="col-auto">|</div>
-					<div class="col-auto text-center">All Rights Reserved
-					</div>
+					<div class="col-auto text-center">All Rights Reserved</div>
 				</div>
 			</div>
 			<div class="col-auto d-none d-lg-block">
